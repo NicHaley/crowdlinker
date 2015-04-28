@@ -4,12 +4,14 @@ $(document).on('ready', function(){
 		type: "GET",
 		cache: false,
 		dataType: "json",
-		url: "javascript/test.json",
-		fail:function(){
-			alert("AJAX Request failed");
+		url: "test.json",
+		error:function(){
+			console.log("An error occurred");
 		},
-		success:function(){
-			alert("AJAX Request successful");
+		success:function(data){
+			console.log("AJAX Request successful");
+			var director = data.director;
+			console.log(director);
 		}
 	});
 
