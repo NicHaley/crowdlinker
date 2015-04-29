@@ -11,6 +11,11 @@ $(document).on('ready', function(){
 		success:function(data){
 			console.log("AJAX Request successful");
 			console.log(data.recentPlayer[3].lastName);
+
+			var template = $('#playerListTemplate').html();
+			Mustache.parse(template);   // optional, speeds up future uses
+			var rendered = Mustache.render(template, data);
+			$('#target').html(rendered);
 		}
 	});
 

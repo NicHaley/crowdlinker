@@ -23,6 +23,7 @@ header {
   background-color: white; }
 
 .tournament-info {
+  padding-left: 100px;
   width: 100%;
   background-color: green; }
 
@@ -40,5 +41,11 @@ header {
   width: 50%;
   float: right;
   background-color: #f2f2f2; }
+
+.playerImage {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  border-radius: 50%; }
 
 /*# sourceMappingURL=styles.css.map */

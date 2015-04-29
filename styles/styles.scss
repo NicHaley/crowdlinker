@@ -43,6 +43,7 @@ header {
 }
 
 .tournament-info {
+	padding-left: 100px;
 	width: 100%;
 	background-color: green;
 }
@@ -63,4 +64,11 @@ header {
 	width: 50%;
 	float: right;
 	background-color: $tournament-body;
+}
+
+.playerImage {
+	height: 30px;
+	width: 30px;
+	object-fit: cover;
+	border-radius: 50%;
 }

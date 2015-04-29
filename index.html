@@ -7,15 +7,17 @@
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-
 	<script src="javascript/script.js"></script>
+
+	<!-- Chart JS -->
+	<script src="javascript/chart.min.js"></script>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -67,10 +69,10 @@
 		</div>
 		<div class="left">
 			<div class="active-players">
-				
+
 			</div>
 			<div class="recent-players">
-				
+				<div id="target"></div>
 			</div>
 		</div>
 		<div class="right">
@@ -82,6 +84,14 @@
 			</div>
 		</div>
 	</div>
+
+	<script id="playerListTemplate" type="text/template"> 
+		<ul class="player-list">
+			{{#recentPlayer}}
+				<li><h6><img class="playerImage" src="{{imageURL}}"> <br> {{firstName}}</h6></li>
+			{{/recentPlayer}}
+		</ul>
+	</script>
 
 </body>
 </html>
