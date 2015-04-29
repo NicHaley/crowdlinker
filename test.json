@@ -1,5 +1,8 @@
 {
-	"title": "Rushmore",
-	"director": "Wes Anderson",
-	"genre": "Comedy"
+	"recentPlayer":[
+		{"firstName":"Rob", "lastName":"Ford", "imageURL":"http://www.thestar.com/content/dam/thestar/news/city_hall/2013/11/29/toronto_mayor_rob_ford_could_be_denied_entry_to_us/rob_ford_summer.jpg.size.xxlarge.promo.jpg"},
+		{"firstName":"Doug", "lastName":"Ford", "imageURL":"https://nationalpostcom.files.wordpress.com/2012/10/doug-ford.jpg?w=620"},
+		{"firstName":"Barack", "lastName":"Obama", "imageURL":"http://upload.wikimedia.org/wikipedia/commons/5/55/President_Barack_Obama,_2012_portrait_crop.jpg"},
+		{"firstName":"Big", "lastName":"Bird", "imageURL":"http://www.themillions.com/wp-content/uploads/2012/10/570_big-bird-wins.jpg"}
+	]
 }

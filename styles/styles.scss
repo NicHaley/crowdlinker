@@ -1,0 +1,66 @@
+// Colours
+
+$top-nav: rgb(52,56,60);
+$side-nav: rgb(145,196,107);
+$tourn-top: rgb(246,246,246);
+$tournament-body: rgb(242,242,242);
+
+// General
+
+body {
+	margin: 0;
+}
+
+// Nav Top
+
+.navbar.navbar-default {
+	height: 80px;
+	margin: 0;
+	border-radius: 0;
+	box-shadow: none;
+	background-image: none;
+	border: none;
+	background-color: $top-nav;
+}
+
+// Nav Side
+
+.nav-side {
+	// margin-top: 100px;
+	height: 100%;
+	width: 100px;
+	position: fixed;
+	background-color: $side-nav;
+}
+
+// Header
+
+header {
+	height: 100px;
+	width: 100%;
+	margin-left: 100px;
+	background-color: white;
+}
+
+.tournament-info {
+	width: 100%;
+	background-color: green;
+}
+
+.top {
+	height: 120px;
+	width: 100%;
+	background-color: $tourn-top;
+}
+
+.left {
+	width: 50%;
+	float: left;
+	background-color: $tournament-body;
+}
+
+.right {
+	width: 50%;
+	float: right;
+	background-color: $tournament-body;
+}

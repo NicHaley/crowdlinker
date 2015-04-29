@@ -10,8 +10,7 @@ $(document).on('ready', function(){
 		},
 		success:function(data){
 			console.log("AJAX Request successful");
-			var director = data.director;
-			console.log(director);
+			console.log(data.recentPlayer[3].lastName);
 		}
 	});
 
