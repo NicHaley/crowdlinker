@@ -27,5 +27,26 @@
 	            "data": [40, 25, 30, 50, 30, 28, 40, 20]
 	        }
 	    ]
+	},
+	"activeTournaments":{
+		"labels":["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL"],
+	    "datasets": [
+	        {
+	            "label": "My First dataset",
+	            "fillColor": "rgba(220,220,220,0.2)",
+	            "strokeColor": "rgba(220,220,220,1)",
+	            "pointColor": "rgba(220,220,220,1)",
+	            "pointStrokeColor": "#fff",
+	            "pointHighlightFill": "#fff",
+	            "pointHighlightStroke": "rgba(220,220,220,1)",
+	            "data": [450, 750, 600, 900, 450, 600, 700, 300]
+	        }
+	    ]
+	},
+	"playerStats":{
+		"newPlayers":"58",
+		"revisited":"75",
+		"commented":"25",
+		"activePlayers":"97"
 	}
 }

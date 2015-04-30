@@ -1,6 +1,6 @@
 $(document).on('ready', function(){
 
-	Chart.defaults.global.responsive = true;
+	// Chart.defaults.global.responsive = true;
 
 	// var data = {
 	//     labels: ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"],

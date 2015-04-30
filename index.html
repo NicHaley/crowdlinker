@@ -17,6 +17,7 @@
 	<script src="javascript/chart.min.js"></script>
 	<script src="javascript/script.js"></script>
 	<script src="javascript/chart-config.js"></script>
+	<script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/0.5.6/dist/progressbar.js"></script>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -69,7 +70,7 @@
 		<div class="left">
 			<div class="active-players">
 				<h3>Active Players</h3>
-				<canvas id="myChart" width="400" height="400"></canvas>
+				<canvas id="activePlayers" width="400" height="400"></canvas>
 			</div>
 			<div class="recent-players">
 				<h3>Recent Players</h3>
@@ -78,10 +79,15 @@
 		</div>
 		<div class="right">
 			<div class="active-tournament">
-				
+				<h3>Active Tournaments</h3>
+				<canvas id="activeTournaments" width="400" height="400"></canvas>
 			</div>
 			<div class="player-statistics">
-				
+				<h3>Player Statistics</h3>
+				<div class="xicon-text">
+					<div class="progress" id="newPlayers"></div>
+					<!-- <img class="xicon" src="http://cdn.flaticon.com/png/256/23735.png" />  -->					
+				</div>
 			</div>
 		</div>
 	</div>
