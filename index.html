@@ -69,7 +69,7 @@
 		</div>
 		<div class="left">
 			<div class="active-players">
-
+				<canvas id="myChart" width="400" height="400"></canvas>
 			</div>
 			<div class="recent-players">
 				<div id="target"></div>
@@ -88,10 +88,32 @@
 	<script id="playerListTemplate" type="text/template"> 
 		<ul class="player-list">
 			{{#recentPlayer}}
-				<li><h6><img class="playerImage" src="{{imageURL}}"> <br> {{firstName}}</h6></li>
+				<li><h6><img class="playerImage" src="{{imageURL}}"> {{firstName}} {{lastName}}</h6></li>
 			{{/recentPlayer}}
 		</ul>
 	</script>
 
+	<script id="statsTemplate" type="text/template">
+		<ul>
+			<li>
+				Online Players: {{onlinePlayers}}
+			</li>
+			<li>
+				Hours Played: {{hoursPlayed}}
+			</li>
+			<li>
+				New Tournaments: {{newTournaments}}
+			</li>
+			<li>
+				Lifetime Fails: {{lifetimeFails}}
+			</li>
+			<li>
+				Comments: {{coments}}
+			</li>
+			<li>
+				Games Played: {{gamesPlayed}}
+			</li>
+		</ul>
+	</script>
 </body>
 </html>

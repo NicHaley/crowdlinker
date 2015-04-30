@@ -1,8 +1,16 @@
 {
 	"recentPlayer":[
-		{"firstName":"Rob", "lastName":"Ford", "imageURL":"http://www.thestar.com/content/dam/thestar/news/city_hall/2013/11/29/toronto_mayor_rob_ford_could_be_denied_entry_to_us/rob_ford_summer.jpg.size.xxlarge.promo.jpg"},
-		{"firstName":"Doug", "lastName":"Ford", "imageURL":"https://nationalpostcom.files.wordpress.com/2012/10/doug-ford.jpg?w=620"},
-		{"firstName":"Barack", "lastName":"Obama", "imageURL":"http://upload.wikimedia.org/wikipedia/commons/5/55/President_Barack_Obama,_2012_portrait_crop.jpg"},
-		{"firstName":"Big", "lastName":"Bird", "imageURL":"http://www.themillions.com/wp-content/uploads/2012/10/570_big-bird-wins.jpg"}
-	]
+		{"firstName":"Rob", "lastName":"Ford", "location":"Canada", "imageURL":"http://www.thestar.com/content/dam/thestar/news/city_hall/2013/11/29/toronto_mayor_rob_ford_could_be_denied_entry_to_us/rob_ford_summer.jpg.size.xxlarge.promo.jpg"},
+		{"firstName":"Doug", "lastName":"Ford", "location":"Canada", "imageURL":"https://nationalpostcom.files.wordpress.com/2012/10/doug-ford.jpg?w=620"},
+		{"firstName":"Barack", "lastName":"Obama", "location":"United States", "imageURL":"http://upload.wikimedia.org/wikipedia/commons/5/55/President_Barack_Obama,_2012_portrait_crop.jpg"},
+		{"firstName":"Big", "lastName":"Bird", "location":"United States", "imageURL":"http://www.themillions.com/wp-content/uploads/2012/10/570_big-bird-wins.jpg"}
+	],
+	"stats":{
+		"onlinePlayers":"267",
+		"hoursPlayed":"1890",
+		"newTournaments":"22",
+		"lifetimeFails":"16",
+		"comments":"6544",
+		"gamesPlayed":"568"
+	}
 }
