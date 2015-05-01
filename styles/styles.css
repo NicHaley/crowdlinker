@@ -21,11 +21,25 @@ body {
   background-color: #91c46b; }
 
 header {
-  height: 100px;
+  position: relative;
+  height: 90px;
   width: 100%;
   margin-top: 80px;
   margin-left: 100px;
-  background-color: white; }
+  background-color: white;
+  font-family: 'Avenir Roman', sans-serif;
+  color: #6c757e; }
+  header span {
+    height: 100%;
+    display: table;
+    padding-left: 20px; }
+    header span h3 {
+      display: table-cell;
+      vertical-align: middle; }
+
+.icon-cog {
+  color: #c7cccf;
+  font-size: 0.8em; }
 
 .tournament-info {
   padding-left: 100px;
@@ -35,6 +49,16 @@ header {
   height: 120px;
   width: 100%;
   background-color: #f6f6f6; }
+
+.stats-container {
+  display: inline-block;
+  padding: 0 20px; }
+
+.stats-num {
+  display: inline-block; }
+
+.stats-sub {
+  display: inline-block; }
 
 .left {
   width: 50%;

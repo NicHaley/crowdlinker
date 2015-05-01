@@ -4,6 +4,8 @@ $top-nav: rgb(52,56,60);
 $side-nav: rgb(145,196,107);
 $tourn-top: rgb(246,246,246);
 $tournament-body: rgb(242,242,242);
+$cobalt: #6c757e;
+$cog: #c7cccf;
 
 // General
 
@@ -40,11 +42,30 @@ body {
 // Header
 
 header {
-	height: 100px;
+	position: relative;
+	height: 90px;
 	width: 100%;
 	margin-top: 80px;
 	margin-left: 100px;
 	background-color: white;
+	font-family: 'Avenir Roman', sans-serif;
+	color: $cobalt;
+
+	span {
+		height: 100%;
+		display: table;
+		padding-left: 20px;
+
+		h3 {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+}
+
+.icon-cog {
+	color: $cog;
+	font-size: 0.8em;
 }
 
 .tournament-info {
@@ -56,6 +77,19 @@ header {
 	height: 120px;
 	width: 100%;
 	background-color: $tourn-top;
+}
+
+.stats-container {
+	display: inline-block;
+	padding: 0 20px;
+}
+
+.stats-num {
+	display: inline-block;
+}
+
+.stats-sub {
+	display: inline-block;
 }
 
 .left {
