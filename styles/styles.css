@@ -55,8 +55,14 @@ header {
 .player-list {
   list-style: none; }
 
+.progress-container {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 120px; }
+
 .progress {
-  height: 120px !important;
+  height: 100% !important;
   position: absolute; }
 
 .progress > svg {

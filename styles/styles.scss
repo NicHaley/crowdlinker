@@ -81,10 +81,17 @@ header {
 	list-style: none;
 }
 
-// Progress Bars
+// Progress Bar;
+
+.progress-container {
+	position: relative;
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+}
 
 .progress {
-	height: 120px !important;
+	height: 100% !important;
 	position: absolute;
 }
 

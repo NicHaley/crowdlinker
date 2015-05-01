@@ -8,6 +8,30 @@ $(document).on('ready', function(){
 		easing: 'easeInOut'
 	});
 
+	var revisited = new ProgressBar.Circle('#revisited', {
+		color: '#ea4123',
+		trailColor: "#eaeaea",
+		strokeWidth: 10,
+		duration: 2000,
+		easing: 'easeInOut'
+	});
+
+	var commented = new ProgressBar.Circle('#commented', {
+		color: '#ea4123',
+		trailColor: "#eaeaea",
+		strokeWidth: 10,
+		duration: 2000,
+		easing: 'easeInOut'
+	});
+
+	var activePlayers = new ProgressBar.Circle('#activePlayersPB', {
+		color: '#ea4123',
+		trailColor: "#eaeaea",
+		strokeWidth: 10,
+		duration: 2000,
+		easing: 'easeInOut'
+	});
+
 	$.ajax({
 		type: "GET",
 		cache: false,
@@ -41,5 +65,9 @@ $(document).on('ready', function(){
 
 	function progressBarAnim(playerStats){
 		newPlayers.animate(playerStats.newPlayers/100);
+		revisited.animate(playerStats.revisited/100);
+		commented.animate(playerStats.commented/100);
+		activePlayers.animate(playerStats.activePlayers/100);
+		console.log(playerStats.activePlayers/100);
 	}
 });
