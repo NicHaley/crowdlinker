@@ -38,8 +38,9 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-					<li><a href="#">Link</a></li>
+					<li class="active"><a href="#">+ Add User<span class="sr-only">(current)</span></a></li>
+					<li><a href="#">User Preferences</a></li>
+					<li><a href="#">Settings</a></li>
 				</ul>
 				<form class="navbar-form navbar-right" role="search">
 					<div class="form-group">
@@ -70,7 +71,7 @@
 		<div class="left">
 			<div class="active-players">
 				<h3>Active Players</h3>
-				<canvas id="activePlayers" width="400" height="400"></canvas>
+				<canvas id="activePlayers" width="400" height="200"></canvas>
 			</div>
 			<div class="recent-players">
 				<h3>Recent Players</h3>
@@ -80,22 +81,11 @@
 		<div class="right">
 			<div class="active-tournament">
 				<h3>Active Tournaments</h3>
-				<canvas id="activeTournaments" width="400" height="400"></canvas>
+				<canvas id="activeTournaments" width="400" height="200"></canvas>
 			</div>
 			<div class="player-statistics">
 				<h3>Player Statistics</h3>
-				<div class="progress-container">
-					<div class="progress" id="newPlayers"></div>
-				</div>
-				<div class="progress-container">
-					<div class="progress" id="revisited"></div>
-				</div>
-				<div class="progress-container">
-					<div class="progress" id="commented"></div>
-				</div>
-				<div class="progress-container">
-					<div class="progress" id="activePlayersPB"></div>
-				</div>
+				<div id="playerStats"></div>
 			</div>
 		</div>
 	</div>
@@ -106,6 +96,22 @@
 				<li><h6><img class="playerImage" src="{{imageURL}}"> {{firstName}} {{lastName}}</h6></li>
 			{{/recentPlayer}}
 		</ul>
+	</script>
+
+	<script id="playerStatsTemplate" type="text/template"> 
+		<div class="progress-container">
+			<div class="progress" id="newPlayers"></div>
+			{{newPlayers}}
+		</div>
+		<div class="progress-container">
+			<div class="progress" id="revisited"></div>
+		</div>
+		<div class="progress-container">
+			<div class="progress" id="commented"></div>
+		</div>
+		<div class="progress-container">
+			<div class="progress" id="activePlayersPB"></div>
+		</div>
 	</script>
 
 	<script id="statsTemplate" type="text/template">

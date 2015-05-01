@@ -91,6 +91,8 @@ header {
 .progress {
 	height: 100% !important;
 	position: absolute;
+	box-shadow: none !important;
+	background: none !important;
 }
 
 .progress > svg {
