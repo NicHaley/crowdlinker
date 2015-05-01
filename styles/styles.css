@@ -23,7 +23,6 @@ body {
 header {
   position: relative;
   height: 90px;
-  width: 100%;
   margin-top: 80px;
   margin-left: 100px;
   background-color: white;
@@ -48,17 +47,39 @@ header {
 .top {
   height: 120px;
   width: 100%;
-  background-color: #f6f6f6; }
+  background-color: #f6f6f6;
+  display: table; }
+
+#stats {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 20px; }
 
 .stats-container {
   display: inline-block;
-  padding: 0 20px; }
+  padding: 0 20px;
+  font-family: 'Avenir Roman', sans-serif; }
+  .stats-container.op {
+    border-left: 3px solid #91c46b; }
+  .stats-container.hp {
+    border-left: 3px solid #6c757e; }
+  .stats-container.nt {
+    border-left: 3px solid #91c46b; }
+  .stats-container.lf {
+    border-left: 3px solid #f15822; }
+  .stats-container.cm {
+    border-left: 3px solid #91c46b; }
+  .stats-container.gp {
+    border-left: 3px solid #f15822; }
 
 .stats-num {
-  display: inline-block; }
+  display: inline-block;
+  color: #6c757e;
+  font-size: 4rem; }
 
 .stats-sub {
-  display: inline-block; }
+  display: inline-block;
+  color: #c7cccf; }
 
 .left {
   width: 50%;

@@ -1,11 +1,12 @@
 // Colours
 
 $top-nav: rgb(52,56,60);
-$side-nav: rgb(145,196,107);
+$green: rgb(145,196,107);
 $tourn-top: rgb(246,246,246);
 $tournament-body: rgb(242,242,242);
 $cobalt: #6c757e;
-$cog: #c7cccf;
+$dark-grey: #c7cccf;
+$orange: #f15822;
 
 // General
 
@@ -36,7 +37,7 @@ body {
 	height: 100%;
 	width: 100px;
 	position: fixed;
-	background-color: $side-nav;
+	background-color: $green;
 }
 
 // Header
@@ -44,7 +45,6 @@ body {
 header {
 	position: relative;
 	height: 90px;
-	width: 100%;
 	margin-top: 80px;
 	margin-left: 100px;
 	background-color: white;
@@ -64,7 +64,7 @@ header {
 }
 
 .icon-cog {
-	color: $cog;
+	color: $dark-grey;
 	font-size: 0.8em;
 }
 
@@ -77,19 +77,54 @@ header {
 	height: 120px;
 	width: 100%;
 	background-color: $tourn-top;
+	display: table;
+}
+
+#stats {
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 20px;
 }
 
 .stats-container {
 	display: inline-block;
 	padding: 0 20px;
+	font-family: 'Avenir Roman', sans-serif;
+
+	&.op {
+		border-left: 3px solid $green;
+	}
+
+	&.hp {
+		border-left: 3px solid $cobalt;
+	}
+
+	&.nt {
+		border-left: 3px solid $green;
+	}
+
+	&.lf {
+		border-left: 3px solid $orange;
+	}
+
+	&.cm {
+		border-left: 3px solid $green;
+	}
+
+	&.gp {
+		border-left: 3px solid $orange;
+	}
 }
 
 .stats-num {
 	display: inline-block;
+	color: $cobalt;
+	font-size: 4rem;
 }
 
 .stats-sub {
 	display: inline-block;
+	color: $dark-grey;
 }
 
 .left {
