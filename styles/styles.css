@@ -1,5 +1,6 @@
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: #f2f2f2 !important; }
 
 .navbar.navbar-default {
   position: fixed;
@@ -28,8 +29,7 @@ header {
 
 .tournament-info {
   padding-left: 100px;
-  width: 100%;
-  background-color: green; }
+  width: 100%; }
 
 .top {
   height: 120px;
@@ -38,13 +38,11 @@ header {
 
 .left {
   width: 50%;
-  float: left;
-  background-color: #f2f2f2; }
+  float: left; }
 
 .right {
   width: 50%;
-  float: right;
-  background-color: #f2f2f2; }
+  float: right; }
 
 .playerImage {
   height: 30px;

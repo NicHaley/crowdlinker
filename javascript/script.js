@@ -42,9 +42,16 @@ $(document).on('ready', function(){
 		},
 		success:function(data){
 			var playerListTemplate = $('#playerListTemplate').html();
-			Mustache.parse(playerListTemplate);   // optional, speeds up future uses
-			var rendered = Mustache.render(playerListTemplate, data);
-			$('#target').html(rendered);
+			var statsTemplate = $('#statsTemplate').html();
+
+			Mustache.parse(playerListTemplate);
+			Mustache.parse(statsTemplate);
+
+			var renderedPLT = Mustache.render(playerListTemplate, data);
+			var renderedST = Mustache.render(statsTemplate, data.stats);
+
+			$('#recentPlayers').html(renderedPLT);
+			$('#stats').html(renderedST);
 
 			var chart1 = $("#activePlayers").get(0).getContext("2d");
 			var chart2 = $("#activeTournaments").get(0).getContext("2d");
@@ -67,7 +74,6 @@ $(document).on('ready', function(){
 		newPlayers.animate(playerStats.newPlayers/100);
 		revisited.animate(playerStats.revisited/100);
 		commented.animate(playerStats.commented/100);
-		activePlayers.animate(playerStats.activePlayers/100);
-		console.log(playerStats.activePlayers/100);
+		activePlayers.animate(playerStats.activePlayers/100);		
 	}
 });

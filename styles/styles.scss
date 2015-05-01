@@ -9,6 +9,7 @@ $tournament-body: rgb(242,242,242);
 
 body {
 	margin: 0;
+	background-color: $tournament-body !important;
 }
 
 // Nav Top
@@ -49,7 +50,6 @@ header {
 .tournament-info {
 	padding-left: 100px;
 	width: 100%;
-	background-color: green;
 }
 
 .top {
@@ -60,14 +60,12 @@ header {
 
 .left {
 	width: 50%;
-	float: left;
-	background-color: $tournament-body;
+	float: left;	
 }
 
 .right {
 	width: 50%;
-	float: right;
-	background-color: $tournament-body;
+	float: right;	
 }
 
 .playerImage {
