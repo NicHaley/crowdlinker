@@ -28,6 +28,7 @@ body {
 	background-image: none;
 	border: none;
 	background-color: $top-nav;
+	z-index: 1;
 }
 
 // Nav Side
@@ -132,6 +133,15 @@ header {
 	float: left;	
 }
 
+.active-players, .active-tournaments, .recent-players, .player-statistics {
+	padding: 20px;
+	text-align: center;
+
+	h3 {
+		text-align: left;
+	}
+}
+
 .right {
 	width: 50%;
 	float: right;	
@@ -150,6 +160,13 @@ header {
 
 // Progress Bar;
 
+.i-container {
+	position: relative;
+	display: inline-block;
+	height: 150px;
+	  margin: 10px;
+}
+
 .progress-container {
 	position: relative;
 	display: inline-block;
@@ -162,18 +179,12 @@ header {
 	position: absolute;
 	box-shadow: none !important;
 	background: none !important;
+	margin: 0 !important;
 }
 
 .progress > svg {
 	height: 100%;
 	display: block;
-}
-
-.xicon {
-	width: 50px;
-	height: 50px;
-	margin-top: 35px;
-	margin-bottom: 55px;
 }
 
 .percentage {
@@ -187,4 +198,12 @@ header {
 		display: table-cell;
 		vertical-align: middle;
 	}
+}
+
+.pb-text {
+	position: absolute;
+	width: 100%;
+	height: 20px;
+	bottom: 0;
+	left: 0;
 }

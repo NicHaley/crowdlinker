@@ -12,7 +12,8 @@ body {
   box-shadow: none;
   background-image: none;
   border: none;
-  background-color: #34383c; }
+  background-color: #34383c;
+  z-index: 1; }
 
 .nav-side {
   height: 100%;
@@ -85,6 +86,12 @@ header {
   width: 50%;
   float: left; }
 
+.active-players, .active-tournaments, .recent-players, .player-statistics {
+  padding: 20px;
+  text-align: center; }
+  .active-players h3, .active-tournaments h3, .recent-players h3, .player-statistics h3 {
+    text-align: left; }
+
 .right {
   width: 50%;
   float: right; }
@@ -98,6 +105,12 @@ header {
 .player-list {
   list-style: none; }
 
+.i-container {
+  position: relative;
+  display: inline-block;
+  height: 150px;
+  margin: 10px; }
+
 .progress-container {
   position: relative;
   display: inline-block;
@@ -108,17 +121,12 @@ header {
   height: 100% !important;
   position: absolute;
   box-shadow: none !important;
-  background: none !important; }
+  background: none !important;
+  margin: 0 !important; }
 
 .progress > svg {
   height: 100%;
   display: block; }
-
-.xicon {
-  width: 50px;
-  height: 50px;
-  margin-top: 35px;
-  margin-bottom: 55px; }
 
 .percentage {
   position: absolute;
@@ -129,5 +137,12 @@ header {
   .percentage span {
     display: table-cell;
     vertical-align: middle; }
+
+.pb-text {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  bottom: 0;
+  left: 0; }
 
 /*# sourceMappingURL=styles.css.map */
