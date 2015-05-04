@@ -15,6 +15,21 @@ body {
   background-color: #34383c;
   z-index: 1; }
 
+.navbar > .container-fluid .navbar-brand {
+  margin-left: -15px;
+  width: 100px; }
+
+.navbar-brand,
+.navbar-nav li a {
+  line-height: 50px !important;
+  height: 80px;
+  padding-top: 0; }
+
+.navbar-form {
+  line-height: 80px;
+  height: 80px !important;
+  margin: 0px !important; }
+
 .nav-side {
   height: 100%;
   width: 100px;
@@ -54,12 +69,21 @@ header {
 #stats {
   display: table-cell;
   vertical-align: middle;
-  padding-left: 20px; }
+  padding: 0 20px;
+  text-align: justify; }
+  #stats:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+    line-height: 0;
+    height: 0; }
 
 .stats-container {
   display: inline-block;
   padding: 0 20px;
-  font-family: 'Avenir Roman', sans-serif; }
+  font-family: 'Avenir Roman', sans-serif;
+  min-width: 158px;
+  margin: 20px 5px 5px 5px; }
   .stats-container.op {
     border-left: 3px solid #91c46b; }
   .stats-container.hp {
