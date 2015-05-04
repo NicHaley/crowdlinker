@@ -3,7 +3,7 @@
 $top-nav: rgb(52,56,60);
 $green: rgb(145,196,107);
 $tourn-top: rgb(246,246,246);
-$tournament-body: rgb(242,242,242);
+$mid-grey: rgb(242,242,242);
 $cobalt: #6c757e;
 $dark-grey: #c7cccf;
 $orange: #f15822;
@@ -12,7 +12,7 @@ $orange: #f15822;
 
 body {
 	margin: 0;
-	background-color: $tournament-body !important;
+	background-color: $mid-grey !important;
 }
 
 // Nav Top
@@ -43,10 +43,50 @@ body {
 	padding-top: 0;
 }
 
+.navbar-right {
+	margin-right: -30px !important;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+	background-color: #1e2327 !important;
+	color: $mid-grey !important;
+}
+
+.dropdown {
+	background-color: #1e2327 !important;
+}
+
 .navbar-form {
 	line-height: 80px;
 	height: 80px !important;
 	margin: 0px !important;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>li>a:hover {
+	background: none !important;
+	color: $mid-grey !important;
+}
+
+.dropdown-menu>li>a {
+	height: 30px;
+	line-height: 30px !important;
+}
+
+.form-control {
+	background-color: #4a5055 !important;
+	border: none !important;
+	color: $mid-grey !important;
+	width: 250px !important;
+	padding-left: 46px !important;
+}
+
+i.icon-search {
+	position: absolute;
+	top: 50%;
+	margin-left: 6px;
+	margin-top: -8px;
+	font-size: 2rem;
+	color: #6c757e;
 }
 
 // Nav Side
@@ -80,6 +120,14 @@ header {
 			vertical-align: middle;
 		}
 	}
+}
+
+.user-profile {
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	border-radius: 50%;
+	margin-right: 15px;
 }
 
 .icon-cog {
@@ -164,10 +212,13 @@ header {
 
 .active-players, .active-tournaments, .recent-players, .player-statistics {
 	padding: 20px;
-	text-align: center;
+	text-align: left;
 
 	h3 {
 		text-align: left;
+		color: $cobalt;
+		font-family: 'Avenir', sans-serif;
+		margin-bottom: 25px;
 	}
 }
 
@@ -177,14 +228,45 @@ header {
 }
 
 .playerImage {
-	height: 30px;
-	width: 30px;
+	height: 35px;
+	width: 35px;
 	object-fit: cover;
 	border-radius: 50%;
+	vertical-align: middle;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
 }
 
 .player-list {
 	list-style: none;
+	text-align: left;
+	padding: 0;
+}
+
+.person {
+	display: inline-block;
+	position: relative;
+	height: 50px;
+	width: 140px;
+	margin: 10px;
+}
+
+.person h5 {
+	display: inline-block;
+	text-align: left;
+	left: 40px;
+	position: absolute;
+	font-family: 'Avenir', sans-serif;
+	color: $cobalt;
+	font-weight: 300;
+
+	span {
+		font-size: 0.9em;
+		color: #a5aaae;
+	}
 }
 
 // Progress Bar;
@@ -194,6 +276,10 @@ header {
 	display: inline-block;
 	height: 150px;
 	margin: 10px;
+	text-align: center;
+	font-family: 'Avenir', sans-serif;
+	color: $cobalt;
+	font-size: 1.8rem;
 }
 
 .progress-container {
@@ -222,10 +308,19 @@ header {
 	height: 100%;
 	display: table;
 	text-align: center;
+	font-size: 2rem;
 
 	span {
 		display: table-cell;
 		vertical-align: middle;
+		font-size: 3rem;
+
+		.percent-sign {
+			display: inline-block;
+			font-size: 1.8rem;
+			margin-top: 5px;
+			position: absolute;
+		}
 	}
 }
 

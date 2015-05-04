@@ -38,13 +38,17 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">+ Add User<span class="sr-only">(current)</span></a></li>
+					<li><a href="#">+ Add User<span class="sr-only">(current)</span></a></li>
 					<li><a href="#">User Preferences</a></li>
 					<li><a href="#">Settings</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+							<img class="user-profile" src="http://273cec6fc41a081db16d-ce34005648ffa0485d8d53d98630bca9.r21.cf2.rackcdn.com/ck/samreal/2013/11/06/Elon-Musk-20837159-1-402.jpg.png">
+							Elon Musk
+							<span class="caret"></span>
+						</a>
 						<ul class="dropdown-menu" role="menu">
 							<li><a href="#">Action</a></li>
 							<li><a href="#">Another action</a></li>
@@ -56,7 +60,8 @@
 				</ul>
 				<form class="navbar-form navbar-right" role="search">
 					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Search">
+						<i class="icon-search"> |</i>
+						<input type="text" class="form-control">
 					</div>					
 				</form>
 			</div><!-- /.navbar-collapse -->
@@ -74,7 +79,7 @@
 				<canvas id="activePlayers" width="400" height="200"></canvas>
 			</div>
 			<div class="recent-players">
-				<h3>Recent Players</h3>
+				<h3>Recent Players</i></h3>
 				<div id="recentPlayers"></div>
 			</div>
 		</div>
@@ -93,7 +98,13 @@
 	<script id="playerListTemplate" type="text/template"> 
 		<ul class="player-list">
 			{{#recentPlayer}}
-				<li><h6><img class="playerImage" src="{{imageURL}}"> {{firstName}} {{lastName}}<br>{{location}}</h6></li>
+				<li class="person">
+					<img class="playerImage" src="{{imageURL}}">
+					<h5>
+						{{firstName}} {{lastName}}<br>
+						<span>{{location}}</span>
+					</h5>
+				</li>
 			{{/recentPlayer}}
 		</ul>
 	</script>
@@ -102,37 +113,32 @@
 		<div class="i-container">
 			<div class="progress-container">
 				<div class="progress" id="newPlayers"></div>
-				<div class="percentage"><span>{{newPlayers}}%</span></div>
+				<div class="percentage"><span>{{newPlayers}}<div class="percent-sign">%</div></span></div>
 			</div>
-			<span class="pb-text">Yolo</span>
+			<span class="pb-text">New Players</span>
 		</div>
 		<div class="i-container">
 			<div class="progress-container">
 				<div class="progress" id="revisited"></div>
-				<div class="percentage"><span>{{revisited}}%</span></div>
+				<div class="percentage"><span>{{revisited}}<div class="percent-sign">%</div></span></div>
 			</div>
-			<span class="pb-text">Yolo</span>
+			<span class="pb-text">Revisited</span>
 		</div>
 		<div class="i-container">
 			<div class="progress-container">
 				<div class="progress" id="commented"></div>
-				<div class="percentage"><span>{{commented}}%</span></div>
+				<div class="percentage"><span>{{commented}}<div class="percent-sign">%</div></span></div>
 			</div>
-			<span class="pb-text">Yolo</span>
+			<span class="pb-text">Commented</span>
 		</div>
 		<div class="i-container">
 			<div class="progress-container">
 				<div class="progress" id="activePlayersPB"></div>
-				<div class="percentage"><span>{{activePlayers}}%</span></div>
+				<div class="percentage"><span>{{activePlayers}}<div class="percent-sign">%</div></span></div>
 			</div>
-			<span class="pb-text">Yolo</span>
+			<span class="pb-text">Active Players</span>
 		</div>
 	</script>
-
-	<div class="stats-container">
-		<div class="stats-num"></div>
-		<div class="stats-sub"></div>
-	</div>
 
 	<script id="statsTemplate" type="text/template">
 		<div class="stats-container op">

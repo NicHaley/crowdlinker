@@ -1,8 +1,19 @@
 {
+	"currentUser":{
+		"firstName":"Elon",
+		"lastName": "Musk",
+		"imageURL": "http://273cec6fc41a081db16d-ce34005648ffa0485d8d53d98630bca9.r21.cf2.rackcdn.com/ck/samreal/2013/11/06/Elon-Musk-20837159-1-402.jpg.png"
+	},
+
 	"recentPlayer":[
 		{"firstName":"Rob", "lastName":"Ford", "location":"Canada", "imageURL":"http://www.thestar.com/content/dam/thestar/news/city_hall/2013/11/29/toronto_mayor_rob_ford_could_be_denied_entry_to_us/rob_ford_summer.jpg.size.xxlarge.promo.jpg"},
 		{"firstName":"Doug", "lastName":"Ford", "location":"Canada", "imageURL":"https://nationalpostcom.files.wordpress.com/2012/10/doug-ford.jpg?w=620"},
 		{"firstName":"Barack", "lastName":"Obama", "location":"United States", "imageURL":"http://upload.wikimedia.org/wikipedia/commons/5/55/President_Barack_Obama,_2012_portrait_crop.jpg"},
+		{"firstName":"Big", "lastName":"Bird", "location":"United States", "imageURL":"http://www.themillions.com/wp-content/uploads/2012/10/570_big-bird-wins.jpg"},
+		{"firstName":"Big", "lastName":"Bird", "location":"United States", "imageURL":"http://www.themillions.com/wp-content/uploads/2012/10/570_big-bird-wins.jpg"},
+		{"firstName":"Big", "lastName":"Bird", "location":"United States", "imageURL":"http://www.themillions.com/wp-content/uploads/2012/10/570_big-bird-wins.jpg"},
+		{"firstName":"Big", "lastName":"Bird", "location":"United States", "imageURL":"http://www.themillions.com/wp-content/uploads/2012/10/570_big-bird-wins.jpg"},
+		{"firstName":"Big", "lastName":"Bird", "location":"United States", "imageURL":"http://www.themillions.com/wp-content/uploads/2012/10/570_big-bird-wins.jpg"},
 		{"firstName":"Big", "lastName":"Bird", "location":"United States", "imageURL":"http://www.themillions.com/wp-content/uploads/2012/10/570_big-bird-wins.jpg"}
 	],
 	"stats":{
