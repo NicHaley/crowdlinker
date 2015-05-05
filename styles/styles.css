@@ -19,6 +19,12 @@ body {
   margin-left: -15px;
   width: 100px; }
 
+.navbar-brand {
+  height: 100% !important;
+  background-color: #1e2327;
+  text-align: center;
+  font-size: 3.5rem !important; }
+
 .navbar-brand,
 .navbar-nav li a {
   line-height: 50px !important;
@@ -68,6 +74,13 @@ i.icon-search {
   width: 100px;
   position: fixed;
   background-color: #91c46b; }
+
+.side-nav-icons {
+  color: #57893e;
+  font-size: 3rem;
+  display: block;
+  text-align: center;
+  margin: 20px 0; }
 
 header {
   position: relative;
@@ -152,7 +165,7 @@ header {
 
 .active-players, .active-tournaments, .recent-players, .player-statistics {
   padding: 20px;
-  text-align: left; }
+  text-align: center; }
   .active-players h3, .active-tournaments h3, .recent-players h3, .player-statistics h3 {
     text-align: left;
     color: #6c757e;

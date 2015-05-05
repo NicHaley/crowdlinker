@@ -2,11 +2,14 @@
 
 $top-nav: rgb(52,56,60);
 $green: rgb(145,196,107);
+$dark-green: #57893e;
+$very-dark-green: #305729;
 $tourn-top: rgb(246,246,246);
 $mid-grey: rgb(242,242,242);
 $cobalt: #6c757e;
 $dark-grey: #c7cccf;
 $orange: #f15822;
+$dark-grey2: #1e2327;
 
 // General
 
@@ -36,6 +39,13 @@ body {
 	width: 100px;
 }
 
+.navbar-brand {
+	height: 100% !important;
+	background-color: $dark-grey2;
+	text-align: center;
+	font-size: 3.5rem !important;
+}
+
 .navbar-brand,
 .navbar-nav li a {
 	line-height: 50px !important; 
@@ -48,12 +58,12 @@ body {
 }
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-	background-color: #1e2327 !important;
+	background-color: $dark-grey2 !important;
 	color: $mid-grey !important;
 }
 
 .dropdown {
-	background-color: #1e2327 !important;
+	background-color: $dark-grey2 !important;
 }
 
 .navbar-form {
@@ -97,6 +107,14 @@ i.icon-search {
 	width: 100px;
 	position: fixed;
 	background-color: $green;
+}
+
+.side-nav-icons {
+	color: $dark-green;
+	font-size: 3rem;
+	display: block;
+	text-align: center;
+	margin: 20px 0;
 }
 
 // Header
@@ -212,7 +230,7 @@ header {
 
 .active-players, .active-tournaments, .recent-players, .player-statistics {
 	padding: 20px;
-	text-align: left;
+	text-align: center;
 
 	h3 {
 		text-align: left;
