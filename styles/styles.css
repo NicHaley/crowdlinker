@@ -12,11 +12,10 @@ body {
   box-shadow: none;
   background-image: none;
   border: none;
-  background-color: #34383c;
+  background-color: #34383C;
   z-index: 1; }
 
 .navbar > .container-fluid .navbar-brand {
-  margin-left: -15px;
   width: 100px; }
 
 .navbar-brand {
@@ -58,7 +57,7 @@ body {
   background-color: #4a5055 !important;
   border: none !important;
   color: #f2f2f2 !important;
-  width: 250px !important;
+  width: 100% !important;
   padding-left: 46px !important; }
 
 i.icon-search {
@@ -68,6 +67,9 @@ i.icon-search {
   margin-top: -8px;
   font-size: 2rem;
   color: #6c757e; }
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  background-color: #34383C; }
 
 .nav-side {
   height: 100%;
@@ -81,6 +83,8 @@ i.icon-search {
   display: block;
   text-align: center;
   margin: 20px 0; }
+  .side-nav-icons.active {
+    color: #305729; }
 
 header {
   position: relative;
@@ -262,5 +266,13 @@ header {
   height: 20px;
   bottom: 0;
   left: 0; }
+
+@media (max-width: 950px) {
+  .form-group {
+    display: none !important; }
+
+  .left, .right {
+    width: 100%;
+    float: none; } }
 
 /*# sourceMappingURL=styles.css.map */

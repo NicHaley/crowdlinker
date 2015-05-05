@@ -1,6 +1,6 @@
 // Colours
 
-$top-nav: rgb(52,56,60);
+$very-dark-grey: #34383C;
 $green: rgb(145,196,107);
 $dark-green: #57893e;
 $very-dark-green: #305729;
@@ -9,7 +9,7 @@ $mid-grey: rgb(242,242,242);
 $cobalt: #6c757e;
 $dark-grey: #c7cccf;
 $orange: #f15822;
-$dark-grey2: #1e2327;
+$sub-black: #1e2327;
 
 // General
 
@@ -30,18 +30,17 @@ body {
 	box-shadow: none;
 	background-image: none;
 	border: none;
-	background-color: $top-nav;
+	background-color: $very-dark-grey;
 	z-index: 1;
 }
 
 .navbar>.container-fluid .navbar-brand {
-	margin-left: -15px;
 	width: 100px;
 }
 
 .navbar-brand {
 	height: 100% !important;
-	background-color: $dark-grey2;
+	background-color: $sub-black;
 	text-align: center;
 	font-size: 3.5rem !important;
 }
@@ -58,12 +57,12 @@ body {
 }
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-	background-color: $dark-grey2 !important;
+	background-color: $sub-black !important;
 	color: $mid-grey !important;
 }
 
 .dropdown {
-	background-color: $dark-grey2 !important;
+	background-color: $sub-black !important;
 }
 
 .navbar-form {
@@ -86,7 +85,7 @@ body {
 	background-color: #4a5055 !important;
 	border: none !important;
 	color: $mid-grey !important;
-	width: 250px !important;
+	width: 100% !important;
 	padding-left: 46px !important;
 }
 
@@ -97,6 +96,10 @@ i.icon-search {
 	margin-top: -8px;
 	font-size: 2rem;
 	color: #6c757e;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	background-color: $very-dark-grey;
 }
 
 // Nav Side
@@ -115,6 +118,10 @@ i.icon-search {
 	display: block;
 	text-align: center;
 	margin: 20px 0;
+
+	&.active {
+		color: $very-dark-green
+	}
 }
 
 // Header
@@ -348,4 +355,15 @@ header {
 	height: 20px;
 	bottom: 0;
 	left: 0;
+}
+
+@media (max-width: 950px) {
+	.form-group {
+		display: none !important;
+	}
+
+	.left, .right {
+		width: 100%;
+		float: none;
+	}
 }
